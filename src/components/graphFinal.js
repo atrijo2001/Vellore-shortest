@@ -1,0 +1,48 @@
+let graphFinal = {
+    VIT: {Katpadi_Railway_Station: 3.6, Katpadi_Bus_Stand: 5.5, Karigiri: 7.1, CMC: 7.7, The_Thick_Shake_Factory: 0.1,
+         CSI_Saint_Stephans_Church: 0.5, Tara_Maa: 0.22, Bihari_Dhaba: 0.45, Lava_Cakes: 0.25, Toms_Diner: 0.5, Cafe_Coffee_Day: 1.6, 
+         Lakshmi_Hospital: 2.5, Dominos_Pizza: 3.8},
+
+    Katpadi_Railway_Station: {VIT: 3.6},
+    Katpadi_Bus_Stand: {VIT: 5.5},
+    Karigiri: {VIT: 7.1},
+    The_Thick_Shake_Factory:{VIT: 0.1},
+    CSI_Saint_Stephans_Church: {VIT: 0.5},
+    Tara_Maa: {VIT: 0.22},
+    Bihari_Dhaba: {VIT: 0.45},
+    Lava_Cakes: {VIT: 0.25},
+    Toms_Diner: {VIT: 0.5},
+    Cafe_Coffee_Day: {VIT:1.6}, 
+    Lakshmi_Hospital: {VIT:2.5}, 
+    Dominos_Pizza: {VIT:3.8},
+    
+    CMC: {VIT: 7.7, District_Sessions_Court: 3, Indira_Nursing_Home: 2.5, Fort_Vellore: 1.7, Poigai: 7.3},
+    Poigai: {CMC: 7.3, Vellore_Airport: 1.6, Golden_Temple: 8.7},
+    Vellore_Airport: {Poigai: 1.6, ISKCON_Vellore: 2.4},
+    ISKCON_Vellore: {Vellore_Airport: 2.4},
+    Golden_Temple: {Poigai: 8.7, Shri_Lakshmi_Narayani_Golden_Temple: 0.28, Lakshmi_Hospital: 0.45, Shri_Hanuman_Temple: 0.6},
+    Shri_Lakshmi_Narayani_Golden_Temple: {Golden_Temple: 0.28},
+    Lakshmi_Hospital: {Golden_Temple: 0.45, Sri_Sai_Temple_and_Trust: 1.5},
+    Shri_Hanuman_Temple: {Golden_Temple: 0.6},
+    Sri_Sai_Temple_and_Trust: {Lakshmi_Hospital: 1.5},
+
+    Fort_Vellore: {CMC: 1.7, State_Government_Museum: 0.21, CSI_Central_Church: 1.2, Vellore_Central_Prison: 5.8,  Bagayam_Hill_Temple: 5.6, Palamathi_Temple: 11.2},
+    State_Government_Museum: {Fort_Vellore: 0.21},
+    CSI_Central_Church: {Fort_Vellore: 1.2, Apsara_Theatre: 1.1},
+    Apsara_Theatre: {CSI_Central_Church: 1.1},
+    Vellore_Central_Prison: {Fort_Vellore: 5.8, Bagayam: 3.3, CMC_Principle_Office: 2.4},
+    Bagayam: {Vellore_Central_Prison: 3.3},
+    CMC_Principle_Office: {Vellore_Central_Prison: 2.4, Bagayam_Police_Station: 1.1, Bagayam_Hill_Temple: 0.75},
+    Bagayam_Police_Station: {Bagayam_Hill_Temple: 0.65, CMC_Principle_Office: 1.1, Bagayam_Forest: 12.2},
+    Bagayam_Hill_Temple: {Fort_Vellore: 5.6, CMC_Principle_Office: 0.75, Bagayam_Police_Station: 0.65, Hanuman_Temple: 6.3, Palamathi_Temple: 6.3},
+    Palamathi_Temple: {Fort_Vellore: 11.2, Bagayam_Hill_Temple: 6.3, Hanuman_Temple: 0.7},
+    Hanuman_Temple: {Palamathi_Temple: 0.7, Bagayam_Hill_Temple: 6.3},
+    Bagayam_Forest: {Bagayam_Police_Station: 12.2},
+    Bagayam: {Vellore_Central_Prison: 3.3},
+
+    Indira_Nursing_Home: {CMC: 2.5, District_Sessions_Court: 2.7},
+    District_Sessions_Court: {CMC: 3, Indira_Nursing_Home: 2.7, Cup_and_Saucer_Waterfalls: 0.8},
+    Cup_and_Saucer_Waterfalls: {District_Sessions_Court: 0.8},
+  };
+
+  export default graphFinal;
